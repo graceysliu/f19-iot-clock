@@ -1,0 +1,26 @@
+// Heart Rate Graphic
+
+
+var view = UILabel()
+
+view.frame = CGRect(x: 0, y: 0, width: 388, height: 548)
+
+view.backgroundColor = .white
+
+
+view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
+
+
+var parent = self.view!
+
+parent.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+view.widthAnchor.constraint(equalToConstant: 388).isActive = true
+
+view.heightAnchor.constraint(equalToConstant: 548).isActive = true
+
+view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 379.22).isActive = true
+
+view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 437).isActive = true
